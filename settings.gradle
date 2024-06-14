@@ -1,0 +1,6 @@
+rootProject.name = 'javaPr2'
+include 'app'
+include 'task'
+include 'task-list'
+include 'java-lib'
+

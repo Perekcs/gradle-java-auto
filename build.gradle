@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+tasks.register('fileCheck') {
+    if(!file("hello.txt").exists()){
+        println "File does not exist!"
+    }
+}
+
+tasks.register('helloFile') {
+    if(file("hello.txt").readLines() == null){
+        println "File is empty!"
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
