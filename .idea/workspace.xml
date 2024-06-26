@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6044448-eef2-4b9f-b12f-6863ad32d986" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/app/MethodLogging.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/app/MethodLoggingLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-lib/src/main/java/org/example/annotations/GenerateNewClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-lib/src/main/java/org/example/processor/GenerateNewClassProcessor.java" afterDir="false" />
+    <list default="true" id="e6044448-eef2-4b9f-b12f-6863ad32d986" name="Changes" comment="Annotations">
+      <change afterPath="$PROJECT_DIR$/task-list/src/test/java/CucumberTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-list/src/test/java/JUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-list/src/test/java/SeleniumTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-list/src/test/java/definitions/TaskManagerStepDefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-list/src/test/resources/features/task_manager.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task/src/main/java/org/task/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/task/src/main/java/org/task/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-list/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/task-list/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +83,10 @@
     &quot;accountId&quot;: &quot;fd6d7f67-4423-402e-a156-428290a4778c&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -93,47 +96,72 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.C:/Users/andri/OneDrive/IdeaProjects/javaPr2/build.gradle.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.javaPr2 [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.javaPr2 [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.javaPr2 [fileCheck].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.javaPr2 [helloFile].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.javaPr2.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.javaPr2:app [:app:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/andri/OneDrive/IdeaProjects/javaPr2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.file-colors&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Feature: task_manager.executor": "Run",
+    "Gradle.Build javaPr2.executor": "Run",
+    "Gradle.C:/Users/andri/OneDrive/IdeaProjects/javaPr2/build.gradle.executor": "Run",
+    "Gradle.CucumberTest (1).executor": "Run",
+    "Gradle.CucumberTest.executor": "Run",
+    "Gradle.JUnitTest.executor": "Run",
+    "Gradle.SeleniumTest.AddToCartAndVerifyTest.executor": "Run",
+    "Gradle.SeleniumTest.executor": "Run",
+    "Gradle.SeleniumTest.s1mpleTest.executor": "Run",
+    "Gradle.SeleniumTest.searchPerekcsTest.executor": "Run",
+    "Gradle.SeleniumTest.testInventoryItemCount.executor": "Run",
+    "Gradle.SeleniumTest.testSearchPerekcs.executor": "Run",
+    "Gradle.Tests in 'javaPr2.task-list.test'.executor": "Run",
+    "Gradle.javaPr2 [build].executor": "Run",
+    "Gradle.javaPr2 [clean].executor": "Run",
+    "Gradle.javaPr2 [fileCheck].executor": "Run",
+    "Gradle.javaPr2 [helloFile].executor": "Run",
+    "Gradle.javaPr2.executor": "Run",
+    "Gradle.javaPr2:app [:app:Main.main()].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/bababooye/java_auto/lab6/javaPr2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.file-colors",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andri\OneDrive\IdeaProjects\javaPr2\task-list\src\test\resources\features" />
+      <recent name="C:\Users\andri\OneDrive\IdeaProjects\javaPr2\task-list\src\test\resources" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="org.app" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.javaPr2 [clean]">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.app.Main" />
-      <module name="javaPr2.app.main" />
+  <component name="RunManager" selected="Cucumber Java.Feature: task_manager">
+    <configuration name="Feature: task_manager" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/task-list/src/test/resources/features/task_manager.feature" />
+      <option name="GLUE" value="definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="javaPr2.task-list.test" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: task_manager" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.app.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,109 +169,115 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="javaPr2 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CucumberTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value=":task-list:test" />
+            <option value="--tests" />
+            <option value="&quot;CucumberTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="javaPr2 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="JUnitTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value=":task-list:test" />
+            <option value="--tests" />
+            <option value="&quot;JUnitTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="javaPr2 [fileCheck]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SeleniumTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="fileCheck" />
+            <option value=":task-list:test" />
+            <option value="--tests" />
+            <option value="&quot;SeleniumTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="javaPr2 [helloFile]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'javaPr2.task-list.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="helloFile" />
+            <option value=":task-list:test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.javaPr2 [clean]" />
-        <item itemvalue="Gradle.javaPr2 [build]" />
-        <item itemvalue="Gradle.javaPr2 [helloFile]" />
-        <item itemvalue="Gradle.javaPr2 [fileCheck]" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Cucumber Java.Feature: task_manager" />
+        <item itemvalue="Gradle.Tests in 'javaPr2.task-list.test'" />
+        <item itemvalue="Gradle.CucumberTest" />
+        <item itemvalue="Gradle.JUnitTest" />
+        <item itemvalue="Gradle.SeleniumTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -261,7 +295,16 @@
       <workItem from="1718719144903" duration="5773000" />
       <workItem from="1718816121453" duration="6437000" />
       <workItem from="1718879981367" duration="17128000" />
-      <workItem from="1718914986684" duration="4129000" />
+      <workItem from="1718914986684" duration="5502000" />
+      <workItem from="1718975872076" duration="817000" />
+      <workItem from="1719228405584" duration="1598000" />
+      <workItem from="1719249983178" duration="2074000" />
+      <workItem from="1719255298853" duration="508000" />
+      <workItem from="1719306976630" duration="26187000" />
+      <workItem from="1719354475203" duration="3319000" />
+      <workItem from="1719397945783" duration="1544000" />
+      <workItem from="1719405334866" duration="1667000" />
+      <workItem from="1719408519919" duration="6078000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -271,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718363487095</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Annotations">
+      <option name="closed" value="true" />
+      <created>1718919416421</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718919416421</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +341,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Annotations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Annotations" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
